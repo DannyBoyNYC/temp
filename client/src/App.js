@@ -23,6 +23,7 @@ function App() {
         <Recipes path="/" recipes={recipes} />
         <RecipeDetail
           path="/recipe/:recipeId"
+          boom={recipes}
           recipe={recipes.filter(recipe => recipe._id === recipe.id)}
         />
       </Router>
